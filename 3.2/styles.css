@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("christmas_wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(213, 12, 12);
+  transition: background 0.2s ease-in;
+  margin: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(235, 42, 42);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  background-color: rgba(255, 255, 255, 0.534);
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 5vh 0;
+  width: 50%;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background-color: rgb(144, 144, 144);
+  color: black;
+}
+
+.marginChorus {
+  margin: 35px 0 0 0;
+}
+
+article {
+  overflow: auto;
+
+  padding: 20px;
+}
+
+/* https://usefulangle.com/post/377/css-animation-on-dom-insert */
+p {
+  font-size: 1.25rem;
+  animation: append-animate 0.3s linear;
+  font-weight: bold;
+}
+
+@keyframes append-animate {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
